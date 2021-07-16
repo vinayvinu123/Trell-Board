@@ -1,0 +1,15 @@
+.headerBar{
+  background-color: #0067C5;
+  align-items: center;
+  display: flex;
+  height: 55px;
+  color:#fff;
+}
+
+.headerBar span{
+  margin: auto;
+  font-size: 30px;
+  padding: 10px 10px;
+  font-weight: 700;
+}
+

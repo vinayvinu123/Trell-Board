@@ -1,0 +1,15 @@
+<div
+  class="card" cdkDrag
+>
+  <div class="card-body">
+    <h3 class="card-title">{{ cardDetails.title }}</h3>
+    <p class="card-text">{{ cardDetails.description }}</p>
+    <p clas="card-creation">{{ cardDetails.creationTime }}</p>
+    <span
+      (click)="deleteCard(listDetails, index)"
+      class="material-icons-outlined"
+    >
+      clear
+    </span>
+  </div>
+</div>

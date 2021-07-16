@@ -1,0 +1,25 @@
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.125);
+  border-radius: 0.25em;
+}
+
+.card-body{
+  min-height: 1px;
+  padding: 1.25em;
+  flex: 1 1 auto;
+}
+
+.card-body span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 55px;
+  padding: 15px 10px;
+  line-height: 40px;
+  cursor: pointer;
+}

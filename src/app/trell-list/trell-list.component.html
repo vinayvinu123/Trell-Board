@@ -1,0 +1,30 @@
+<div style="padding: 10px; text-align: end">
+  <button class="primary-button" (click)="addNewList()">Add List</button>
+</div>
+
+<div
+  style="display: grid; grid-template-columns: repeat(4, 1fr)"
+  cdkDropListGroup
+>
+  <div *ngFor="let item of list;">
+    <app-card [cardHeader]="item.listName">
+      <div *ngFor="let cardDetails of item.cards;let i = index">
+        <div
+        data-index="i"
+          class="card-content"
+          cdkDropList
+          [cdkDropListData]="item.cards"
+          (cdkDropListDropped)="drop($event,i)"
+
+        >
+          <app-mini-card
+
+            [cardDetails]="cardDetails"
+            [listDetails]="item.listName"
+            [index]="i"
+          ></app-mini-card>
+        </div>
+      </div>
+    </app-card>
+  </div>
+</div>
