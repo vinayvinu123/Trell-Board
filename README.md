@@ -1,8 +1,8 @@
-#TrellDashboard
+## TrellDashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
-##install packages
+## install packages
 Run `npm install` to install all required package
 
 ## Development server
